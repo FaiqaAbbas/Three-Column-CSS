@@ -65,7 +65,7 @@ body{
 @media (width>375px){
     .card-container{
         box-sizing: border-box;
-        max-width:80vw;
+        max-width:70vw;
         min-height:70vh;
         display: flex;
 
