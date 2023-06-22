@@ -1,0 +1,90 @@
+*{
+    margin:0px;
+}
+body{
+    font-family: 'Outfit',sans-serif; 
+    font-weight: 400;
+    font-size:1rem;
+ 
+}
+
+.container{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
+.card-container{
+    padding-inline:2rem;
+    padding-block: 3rem;
+}
+.sedan{
+    background-color:hsl(31, 77%, 52%) ;
+    color:hsl(31, 77%, 52%);
+    border-radius: 0.5rem 0.5rem 0px 0px;
+}
+.suv{
+    background-color:hsl(184, 100%, 22%) ;
+    color:hsl(184, 100%, 22%);
+}
+.luxury{
+    background-color:hsl(179, 100%, 13%) ;
+    color:hsl(179, 100%, 13%) ;
+    border-radius: 0px 0px 0.5rem 0.5rem;
+}
+.card p{
+    color:hsla(0, 0%, 100%, 0.75);
+    opacity:0.9 ;
+    line-height:24px ;
+    margin-bottom: 3rem;
+}
+
+.card h1{
+    font-size: 2rem;
+    font-weight: 700;
+    font-family: 'Big Shoulders Display',sans-serif;
+    color:hsl(0, 0%, 95%);
+}
+.card a{  
+    display: inline-block;
+    color:inherit;
+    background-color: hsl(0, 0%, 95%);
+    border-radius: 2rem;
+    padding: 0.6rem 1.5rem ;
+}
+.card{
+    box-sizing: border-box;
+    padding-inline: 3rem;
+    padding-block:1.4rem;
+}
+
+.card>*{
+    margin-block:1.1rem;
+}
+@media (width>375px){
+    .card-container{
+        box-sizing: border-box;
+        max-width:910px;
+        display: flex;
+
+    }
+    .card{
+        flex-grow: 1;    
+    }
+    .card h2{
+        font-size: 2.5rem;
+    }
+    .sedan{
+        border-radius: 0.5rem 0 0 0.5rem ;
+    }
+    .luxury{
+        border-radius: 0 0.5rem 0.5rem 0;
+    }
+    .card a{
+        background-color: transparent;
+        color: hsl(0, 0%, 95%);
+        border: 2px solid hsl(0, 0%, 95%);
+        
+        
+    }
+}
